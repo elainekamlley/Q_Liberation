@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> q_liberation</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	</head>
+	<body>
+		<h1> Q_liberation Members </h1>
+			{% for m in members: %}
+			<div>
+				{{m.firstname}} {{m.lastname}}
+				<br>
+			</div>
+			{% endfor %}
+
+
+	</body>
+</html>
